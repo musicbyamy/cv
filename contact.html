@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    body{
+       
+        height: 100vh;
+        width: 100vw;
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        height: 60vh;
+        width: 70vw;
+        /* border: 3px solid black; */
+       font-size: 2rem;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+       
+    }
+    input{
+        height: 2rem;
+    }
+    button{
+        height: 2rem;
+    }
+    
+    
+
+</style>
+
+<body>
+    <form id="contact" action="Mailto:amitesh.21197@gmail.com" method="post">
+        <div>
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your full name" autofocus>
+        </div>
+        <div>
+            <label for="e-mail">Your Email:</label>
+            <input type="email" name="e-mail" id="e-mail">
+        </div>
+        <div>
+            Type of Appointment:
+            <label for="meeting-type-personal"> Personal</label>
+           <input type="radio" name="meeting-type" id="meeting-type-personal" value="Personal">
+           <label for="meeting-type-business">Business</label>
+            <input type="radio" name="meeting-type" id="meeting-type-business" value="business">
+        </div>
+        <div>
+            <label for="message">Message
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="hello"></textarea>
+            </label>
+        </div>
+
+        <div><button id="contact">Submit</button></div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>

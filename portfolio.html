@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amitesh's CV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Oswald', sans-serif;
+    }
+
+   
+
+    header {
+        height: 7vh;
+        width: 100vw;
+        background-color: white;
+        color: black;
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    header:hover {
+
+        background-color: black;
+        color: white;
+
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        margin: 1% 1%;
+        
+    }
+    
+   
+
+    .img{
+        transform: scale3d(1, 1, 1);
+
+        transition-property: all;
+        transition-duration: 600ms;
+    }
+
+    .img:hover {
+
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    .description {
+        position: relative;
+        top: 4vh;
+        left: 7vw;
+        font-size: 1.2rem;
+    }
+
+    .intro {
+        margin-top: 4vh;
+        margin-left: 4vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .hobbies {
+        margin: 10vw;
+    }
+
+    .skills {
+        margin-left: 10vw;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+    }
+    footer{
+        height: 7vh;
+        background-color: black;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    aside{
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end; */
+        display: inline-block;
+        position: relative;
+        left: 80vw;
+        
+        margin-bottom: 2%;
+        
+
+    }
+    .textme{
+       
+        padding: 3px;
+        font-size: 2rem;
+        border-radius: 20%;
+        /* animation-name: contact-Animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; */
+    }
+    /* .textme:hover{
+        color: white;
+    }
+    @keyframes contact-Animate{
+        0%{border-radius: 20%;color: black;}
+        25%{border-radius: 30%;color: black;}
+        50%{border-radius: 40%; color: white;}
+        100%{border-radius: 50%;color: white;}
+    } */
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="img"><img src="img\amycircle.png" alt="Profilepicture" width="300px"></div>
+            <div class="description">
+                <h1>Amitesh Kumar</h1>
+                <p>Hi there!. I'm a solo artist/ producer/ songwriter at my own music project - <em><b>Kshanik</b></em>
+                </p>
+                <p>I'm also currently pursuing my higher studies at the university.</p>
+                <p>I love reading books.</p>
+                <p>I write.</p>
+            </div>
+        </section>
+        <!-- <hr noshade=""> -->
+        <section class="main">
+            <section class="hobbies">
+                <h2>My Hobbies</h2>
+                <ol>
+                    <li>Sports</li>
+                    <li>Music</li>
+                    <li>Writing</li>
+                    <li>Sightseeing</li>
+                </ol>
+            </section>
+            <section class="skills">
+                <table cellspacing="20px">
+                    <caption>Skills</caption>
+                    <thead>
+                        <th>Skills</th>
+                        <th>Experience</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Photography</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Music</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Writing</td>
+                            <td>⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Ableton</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Html</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <aside>
+            <div class="textme"><a href="contact.html">Send me a message!</a></div>
+        </aside>
+    </main>
+    <footer>
+        Amitesh Portfolio Website&copy;2023 -All Rights Reserved
+    </footer>
+</body>
+
+</html>
